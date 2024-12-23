@@ -1,156 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lim Chee Keen's CV</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Quicksand', sans-serif;
-            background-color: #121212; /* Dark background */
-            color: #f0f0f0; /* Off-white text */
-            padding: 20px;
-            scrollbar-width: thin; /* Thin scrollbar for Firefox */
-            scrollbar-color: #4d7fff #1e1e1e; /* Thumb and track color for Firefox */
-        }
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-        .header {
-            text-align: center;
-            margin-bottom: 40px; /* Increased space below header */
-        }
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogs">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fiction">Fiction Writing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="custom-scroller"></div>
 
-        .header img {
-            width: 150px; /* Adjust size as needed */
-            border-radius: 50%; /* Circular profile picture */
-        }
-
-        .section {
-            margin-bottom: 30px; /* Increased space between sections */
-            line-height: 1.6; /* Increased line height for better readability */
-        }
-
-        h2, h3 {
-            color: #e0e0e0; /* Slightly lighter for headings */
-            margin-bottom: 15px; /* Space below headings */
-        }
-
-        .content {
-            margin-left: auto;
-            margin-right: auto;
-            width: 60%; /* Default width for desktop */
-        }
-
-        @media (max-width: 768px) {
-            .content {
-                width: 80%; /* Width for mobile devices */
-            }
-        }
-
-        /* Custom scrollbar for WebKit browsers */
-        ::-webkit-scrollbar {
-            width: 12px; /* Width of the scrollbar */
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #1e1e1e; /* Track color */
-            border-radius: 10px; /* Rounded corners */
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: #27324e; /* Thumb color */
-            border-radius: 10px; /* Rounded corners */
-            border: 3px solid #1e1e1e; /* Padding around thumb */
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: #5670be; /* Thumb color on hover */
-        }
-    </style>
-</head>
-
-<body>
-    <div class="header">
-      <img src="profile_picture.png" alt="Lim Chee Keen's Profile Picture">
-      <h1>Lim Chee Keen</h1>
-      <p>
-        Nationality: Singaporean | Email: limcheekeen.63@gmail.com | Mobile: +65
-        97846282
-      </p>
-      <a
-        href="https://www.linkedin.com/in/chee-keen-lim-3487a0145/"
-        target="_blank"
-      >LinkedIn Profile</a>&nbsp; | &nbsp;
-      <a href="lim_chee_keen.pdf" download style="color: #4d7fff;">Download CV</a>
+    <div class="header-wrapper" id="home">
+      <div class="header" id="home">
+        <img src="profile_picture.png" alt="Lim Chee Keen's Profile Picture" />
+        <h1>Lim Chee Keen</h1>
+        <p>Contact email: limcheekeen.63@gmail.com</p>
+        <a
+          href="https://www.linkedin.com/in/chee-keen-lim-3487a0145/"
+          target="_blank"
+          >LinkedIn Profile</a
+        >&nbsp; | &nbsp;
+        <a href="lim_chee_keen.pdf" download style="color: #4d7fff"
+          >Download CV</a
+        >
+        <p class="tagline">
+          Passionate Software Engineer crafting cross-platform experiences for
+          web and mobile.<br />
+          Co-founder of
+          <a href="https://bizbulk.com/" target="_blank">Bizbulk</a>. Organiser
+          of
+          <a href="https://www.meetup.com/flutter-singapore/" target="_blank"
+            >Flutter Singapore</a
+          >.
+        </p>
+      </div>
     </div>
 
     <div class="content">
       <div class="section">
-        <h2>Executive Summary</h2>
-        <p>
-          Software Engineer with over 4 years of experience building
-          cross-platform apps on web and mobile devices. Currently pursuing a
-          Masters in Computing at the National University of Singapore, NUS.
-          Organiser for Flutter Singapore.
-        </p>
-      </div>
-
-      <div class="section">
-        <h2>Professional Experience</h2>
+        <h2 style="text-align: center">Professional Experience</h2>
         <h3>Software Engineer at GAOGAO (Oct 2021 - Dec 2023)</h3>
         <ul>
           <li>
-            <strong>Dental service search engine:</strong> Migrated web
-            application from Client-side rendering to Server-side rendering with
-            Next.js. Performed Search engine optimisation. Created new payment
-            gateway UI powered by GMO payments. Successfully completed in Oct ‘23.
+            <strong>Dental service search engine:</strong> Migrated application
+            from Client-side to Server-side rendering with Next.js. Performed
+            Search engine optimisation. Created new payment gateway UI powered
+            by GMO payments. Successfully completed in Oct 2023.
           </li>
           <li>
-            <strong>2D Metaverse project:</strong> Metaverse engine used
-            React-three-fibre as a 2D engine and Agora as a video hosting service.
-            Deployed AWS Cognito, AppSync, and DynamoDB to create real-time updates
-            for Metaverse users. Successfully deployed MVP in Jun ‘23.
+            <strong>2D Metaverse project:</strong> Built Metaverse for companies
+            to hold virtual meetings. Used React-three-fibre as a 2D engine and
+            Agora as a video hosting service. Deployed AWS Cognito, AppSync, and
+            DynamoDB to create real-time updates for users. Successfully
+            deployed MVP in Jun 2023.
           </li>
           <li>
-            <strong>Fintech company (loan services):</strong> Used React.js as the
-            web framework. Completed involvement in Dec ‘22.
+            <strong>Fintech company (loan services):</strong> Built front-end
+            user interface for applying and tracking of loans. Used React.js as
+            the web framework. Completed involvement in Dec 2022.
           </li>
           <li>
-            <strong>Food delivery service:</strong> Migrated a client's legacy
-            database to the cloud. Used AWS Elastic Beanstalk, Route 53, RDS, and
-            EC2. Completed involvement in Oct‘22.
+            <strong>Food delivery service:</strong> Migrated a client's old
+            database to the cloud. Used AWS Elastic Beanstalk, Route 53, RDS,
+            and EC2. Completed involvement in Oct 2022.
+          </li>
+          <li>
+            <strong>Smart contracts application:</strong> Built web application
+            for users to create Decentralised Autonomous Organisations (DAO).
+            Front-end application interfaceted with smart contracts hosted on
+            the Ethereum Blockchain. Successfully completed in Jul 2022.
           </li>
           <li>
             <strong>AI Transcription service:</strong> Powered by AI, the web
-            application allows users to transcribe uploaded videos and audio into
-            text for editing. Used Next.js and Tailwind CSS. Successfully deployed
-            MVP in Dec‘21.
+            application allows users to transcribe uploaded videos and audio
+            into text for editing. Used Next.js and Tailwind CSS. Successfully
+            deployed MVP in Dec 2021.
           </li>
         </ul>
       </div>
-
+      <div class="image-container">
+        <img src="gaogao_team.jpg" alt="GAOGAO team" class="image" />
+      </div>
       <div class="section">
-        <h2>Competencies and Skills Summary</h2>
+        <h3>Co-foundner & Lead Engineer of Bizbulk (Apr 2022 - Present)</h3>
         <ul>
-          <li><strong>Technical Competencies:</strong> Javascript/Typescript (React, Node.js, Next.js), Databases (Firestore, SQLite, DynamoDB), Python (Machine Learning and AI), Dart (Flutter), C# (Game Development), Solidity (Blockchain)</li>
-
-          <li><strong>Languages:</strong> English, Chinese, Spanish, Japanese</li>
+          <li>
+            <strong>E-commerce platform:</strong> Architected and built the
+            cross-platform application. Set up cloud backend to power user
+            authentication, database and payments. This platform allows users to
+            create groups and buy products at a discount. Successfully launched
+            in May 2022. Visit Bizbulk's <a href="https://bizbulk.com/" target="_blank">webpage</a>.
+          </li>
         </ul>
       </div>
-
-      <div class="section">
-        <h2>Academic Background</h2>
-        <p>Bachelors of Arts (Honors in Political Science) from University of Warwick.</p>
+      <div class="image-container">
+        <img src="bizbulk_logo.png" alt="Bizbulk" class="image" />
       </div>
-
       <div class="section">
-        <h2>Certifications & Achievements</h2>
+        <h3>Significant contributions</h3>
         <ul>
-          <li>“Foundations in Artificial Intelligence” Awarded by AI Singapore, Jul ‘20.</li>
-          <li>“AWS Certified Machine Learning - Specialty certification” awarded by Amazon Web Services, Aug ‘22.</li>
+          <li>
+            <strong>Flutter Singapore Organiser:</strong> Lead organiser for the
+            Flutter Singapore meetup chapter. Hosts meetups every quarter where
+            engineers present best practices and updates. Meetups also include a
+            neetworking segment. Visit Flutter Singapore's <a href="https://www.meetup.com/flutter-singapore/" target="_blank"
+            >meetup page</a
+          >.
+          </li>
         </ul>
       </div>
+      <div class="image-container">
+        <img src="flutter_org.jpg" alt="Flutter organiser" class="image" />
+      </div>
+
+      <div class="container">
+        <div class="section">
+          <hr
+            style="border: 1px solid var(--section-separator); margin: 40px 0"
+          />
+          <h2>Technical Skills</h2>
+
+          <ul style="text-align: center">
+            <li style="color: var(--text-green)">
+              Javascript/Typescript (React, Node.js, Next.js)
+            </li>
+            <li style="color: var(--text-orange)">
+              Databases (Firestore, SQLite, DynamoDB)
+            </li>
+            <li style="color: var(--text-blue)">
+              Python (Machine Learning and AI)
+            </li>
+            <li style="color: var(--text-orange)">Dart (Flutter)</li>
+            <li style="color: var(--text-green)">C# (Game Development)</li>
+            <li style="color: var(--text-orange)">Solidity (Blockchain)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <hr
+            style="border: 1px solid var(--section-separator); margin: 40px 0"
+          />
+          <h2>Languages:</h2>
+          <ul style="text-align: center">
+            <li style="color: var(--text-green)">English (Native)</li>
+            <li style="color: var(--text-orange)">Chinese (Advanced)</li>
+            <li style="color: var(--text-blue)">Japanese (Intermediate)</li>
+            <li style="color: var(--text-orange)">Spanish (Beginner)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" id="achievements">
+        <div class="section">
+          <hr
+            style="border: 1px solid var(--section-separator); margin: 40px 0"
+          />
+          <h2>Academic Background</h2>
+          <ul>
+            <li>
+              <strong>Master of Computing (General track)</strong>
+              , National University of Singapore
+              <span style="color: var(--text-green)"
+                >2024 - 2025 (Expected)</span
+              >
+            </li>
+            <li>
+              <strong>Bachelor of Arts (Honours in Political Science)</strong>
+              , University of Warwick (UK)
+              <span style="color: var(--text-green)">2010 - 2013</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <hr
+            style="border: 1px solid var(--section-separator); margin: 40px 0"
+          />
+          <h2 style="text-align: center; color: var(--text-orange)">
+            Achievements
+          </h2>
+          <ul class="achievements-list">
+            <li>
+              <strong>“Foundations in Artificial Intelligence”</strong>
+              Awarded by
+              <span style="color: var(--text-orange)">AI Singapore</span>,
+              <span style="color: var(--text-green)">Jul 2020</span>
+            </li>
+            <li>
+              <strong
+                >“AWS Certified Machine Learning - Specialty
+                Certification”</strong
+              >
+              Awarded by
+              <span style="color: var(--text-orange)">Amazon Web Services</span
+              >,
+              <span style="color: var(--text-green)">Aug 2022</span>
+            </li>
+            <li>
+              <strong>Winner</strong>
+              Flutter Global Gamers Challenge, a global hackathon by
+              <span style="color: var(--text-orange)">Google</span>,
+              <span style="color: var(--text-green)">Jan 2024</span>
+              View the Flutter game
+              <a
+                href="https://xjyribro.github.io/xjyribro.gomiland.io/"
+                target="_blank"
+                style="color: var(--highlight-blue); font-weight: bold"
+              >
+                here
+              </a>!
+            </li>
+            <li>
+              <strong>Top 5 Finalist</strong>
+              GovTech x OpenAI Hackathon (First OpenAI Hackathon in Asia),
+              <span style="color: var(--text-green)">Nov 2024</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" id="blogs">
+        <div class="section">
+          <hr
+            style="border: 1px solid var(--section-separator); margin: 40px 0"
+          />
+          <h2 style="text-align: center; color: var(--text-green)">
+            Technical Blog
+          </h2>
+          <p style="text-align: center">
+            Check out my technical sharing and articles on Medium: <br />
+            <a
+              href="https://medium.com/@limcheekeen.63"
+              target="_blank"
+              style="color: var(--highlight-blue); font-weight: bold"
+            >
+              https://medium.com/@limcheekeen.63
+            </a>
+          </p>
+        </div>
+        <div class="section" id="travel-blog">
+          <hr
+            style="border: 1px solid var(--section-separator); margin: 40px 0"
+          />
+          <h2 style="text-align: center; color: var(--text-orange)">
+            Travel Blog
+          </h2>
+          <p style="text-align: center">
+            I lived in various parts of the world and I love travelling! I share
+            my stories, photos, and travel tips on my blog: <br />
+            <a
+              href="https://mundivagantblog.wordpress.com"
+              target="_blank"
+              style="color: var(--highlight-blue); font-weight: bold"
+            >
+              mundivagantblog.wordpress.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container" id="fiction">
+        <div class="section">
+          <hr
+            style="border: 1px solid var(--section-separator); margin: 40px 0"
+          />
+          <h2 style="text-align: center; color: var(--text-green)">
+            Fiction Writing
+          </h2>
+          <p style="text-align: center">Coming soon</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 20px">
+        <a href="#home" style="color: var(--text-red); font-weight: bold"
+          >Back to Top</a
+        >
+      </p>
     </div>
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("scroll", () => {
+        const scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop
+        const scrollHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight
+        const scrollPercent = (scrollTop / scrollHeight) * 100
+
+        document.getElementById("custom-scroller").style.width =
+          scrollPercent + "%"
+      })
+    </script>
+    <script>
+      function updateGreenBarPosition() {
+        const navbar = document.querySelector(".navbar") // Select the navbar
+        const textGreen = document.getElementById("custom-scroller") // Select the green bar
+
+        if (navbar && textGreen) {
+          const navbarHeight = navbar.offsetHeight // Get the navbar height
+          textGreen.style.top = `${navbarHeight}px` // Adjust the green bar position
+        }
+      }
+
+      // Set up the ResizeObserver
+      const navbar = document.querySelector(".navbar")
+      if (navbar) {
+        const resizeObserver = new ResizeObserver(() => {
+          updateGreenBarPosition() // Callback when the navbar height changes
+        })
+
+        resizeObserver.observe(navbar) // Start observing the navbar element
+      }
+
+      // Run the function when the page loads
+      window.addEventListener("DOMContentLoaded", updateGreenBarPosition)
+
+      // Listen for the click event on the navbar toggler button
+      const navbarToggler = document.querySelector(".navbar-toggler")
+      if (navbarToggler) {
+        navbarToggler.addEventListener("click", () => {
+          // Force a reflow to ensure ResizeObserver gets triggered
+          navbar.offsetHeight // Accessing this property forces the browser to recalculate layout
+        })
+      }
+    </script>
+  </body>
 </html>
