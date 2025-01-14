@@ -124,7 +124,8 @@
             cross-platform application. Set up cloud backend to power user
             authentication, database and payments. This platform allows users to
             create groups and buy products at a discount. Successfully launched
-            in May 2022. Visit Bizbulk's <a href="https://bizbulk.com/" target="_blank">webpage</a>.
+            in May 2022. Visit Bizbulk's
+            <a href="https://bizbulk.com/" target="_blank">webpage</a>.
           </li>
         </ul>
       </div>
@@ -138,9 +139,10 @@
             <strong>Flutter Singapore Organiser:</strong> Lead organiser for the
             Flutter Singapore meetup chapter. Hosts meetups every quarter where
             engineers present best practices and updates. Meetups also include a
-            neetworking segment. Visit Flutter Singapore's <a href="https://www.meetup.com/flutter-singapore/" target="_blank"
-            >meetup page</a
-          >.
+            neetworking segment. Visit Flutter Singapore's
+            <a href="https://www.meetup.com/flutter-singapore/" target="_blank"
+              >meetup page</a
+            >.
           </li>
         </ul>
       </div>
@@ -242,8 +244,8 @@
                 target="_blank"
                 style="color: var(--highlight-blue); font-weight: bold"
               >
-                here
-              </a>!
+                here </a
+              >!
             </li>
             <li>
               <strong>Top 5 Finalist</strong>
@@ -305,6 +307,27 @@
           <p style="text-align: center">Coming soon</p>
         </div>
       </div>
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ck-lim11/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img src="linkedin.png" alt="LinkedIn Icon" />
+        </a>
+        <a
+          href="https://github.com/xjyribro"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <img src="github.png" alt="GitHub Icon" />
+        </a>
+        <a href="https://x.com/lcheekeen" target="_blank" aria-label="Twitter">
+          <img src="x_icon.png" alt="Twitter Icon" />
+        </a>
+      </div>
+
       <p style="text-align: center; margin-top: 20px">
         <a href="#home" style="color: var(--text-red); font-weight: bold"
           >Back to Top</a
@@ -359,6 +382,27 @@
           navbar.offsetHeight // Accessing this property forces the browser to recalculate layout
         })
       }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const images = document.querySelectorAll(".image")
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible")
+                observer.unobserve(entry.target) // Stop observing after it's visible
+              }
+            })
+          },
+          { threshold: 0.1 } // Trigger when 10% of the image is visible
+        )
+
+        images.forEach((image) => {
+          observer.observe(image)
+        })
+      })
     </script>
   </body>
 </html>
