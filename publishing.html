@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Published Works - Lim Chee Keen</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#blogs">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#fiction">Fiction Writing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="custom-scroller"></div>
+
+    <div class="header-wrapper" id="home">
+      <div class="header" id="home">
+        <h1>Published Works</h1>
+        <p class="tagline">
+          Welcome to my collection of published fiction works.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="books-container">
+        <div class="book-item">
+          <h2 style="color: var(--text-green); font-size: 2.5em; margin-bottom: 30px;">Caravel</h2>
+          <div class="image-container">
+            <img src="public/caravel_cover.png" alt="Caravel Book Cover" class="book-cover" />
+          </div>
+          <div class="section">
+            <h3>About this book</h3>
+            <p>
+              [Book description placeholder - A captivating tale of adventure and discovery that takes readers on an unforgettable journey through uncharted waters and mysterious lands.]
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+              <a href="#" target="_blank" style="color: var(--highlight-blue); font-weight: bold;">
+                Available on Amazon KDP
+              </a>
+            </p>
+          </div>
+        </div>
+        
+        <div class="book-item">
+          <h2 style="color: var(--text-green); font-size: 2.5em; margin-bottom: 30px;">Marki</h2>
+          <div class="image-container">
+            <img src="public/marki_cover_.jpg" alt="Marki Book Cover" class="book-cover" />
+          </div>
+          <div class="section">
+            <h3>About this book</h3>
+            <p>
+              [Book description placeholder - An engaging story that will keep you turning pages, filled with compelling characters and unexpected twists.]
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+              <a href="#" target="_blank" style="color: var(--highlight-blue); font-weight: bold;">
+                Available on Amazon KDP
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ck-lim11/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img src="public/linkedin.png" alt="LinkedIn Icon" />
+        </a>
+        <a
+          href="https://github.com/xjyribro"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <img src="public/github.png" alt="GitHub Icon" />
+        </a>
+        <a href="https://x.com/lcheekeen" target="_blank" aria-label="Twitter">
+          <img src="public/x_icon.png" alt="Twitter Icon" />
+        </a>
+      </div>
+
+      <p style="text-align: center; margin-top: 20px">
+        <a href="index.html" style="color: var(--text-red); font-weight: bold"
+          >Back to Home</a
+        >
+      </p>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("scroll", () => {
+        const scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop
+        const scrollHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight
+        const scrollPercent = (scrollTop / scrollHeight) * 100
+
+        document.getElementById("custom-scroller").style.width =
+          scrollPercent + "%"
+      })
+    </script>
+    <script>
+      function updateGreenBarPosition() {
+        const navbar = document.querySelector(".navbar")
+        const textGreen = document.getElementById("custom-scroller")
+
+        if (navbar && textGreen) {
+          const navbarHeight = navbar.offsetHeight
+          textGreen.style.top = `${navbarHeight}px`
+        }
+      }
+
+      const navbar = document.querySelector(".navbar")
+      if (navbar) {
+        const resizeObserver = new ResizeObserver(() => {
+          updateGreenBarPosition()
+        })
+
+        resizeObserver.observe(navbar)
+      }
+
+      window.addEventListener("DOMContentLoaded", updateGreenBarPosition)
+
+      const navbarToggler = document.querySelector(".navbar-toggler")
+      if (navbarToggler) {
+        navbarToggler.addEventListener("click", () => {
+          navbar.offsetHeight
+        })
+      }
+    </script>
+  </body>
+</html>
