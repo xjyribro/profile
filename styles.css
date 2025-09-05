@@ -93,11 +93,11 @@ a[href="#home"] {
   background: linear-gradient(
     to right,
     #121212,
-    #121212,
-    #121212,
-    #1a130a,
-    #241a0f,
-    #2d2013
+    #131218,
+    #141220,
+    #151225,
+    #16122a,
+    #18132f
   );
   background-size: 1100% 100%;
   animation: gradientScroll 10s linear infinite;
