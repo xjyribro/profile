@@ -76,31 +76,52 @@ a[href="#home"] {
   text-decoration: none;
 }
 
-@keyframes gradientScroll {
+@keyframes shimmerSweep {
   0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 0%;
+    transform: translateX(-100%);
   }
   100% {
-    background-position: 0% 0%;
+    transform: translateX(250%);
   }
 }
 
 .header-wrapper {
   width: 100%;
+}
+
+.shimmer-banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0d1117 0%, #0f1520 50%, #0d1117 100%);
+  padding: 20px 0 16px;
+}
+
+.header-top {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  width: 60%;
+}
+
+.shimmer-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
   background: linear-gradient(
     to right,
-    #121212,
-    #131218,
-    #141220,
-    #151225,
-    #16122a,
-    #18132f
+    transparent 0%,
+    rgba(77, 127, 255, 0.06) 20%,
+    rgba(100, 160, 255, 0.22) 50%,
+    rgba(77, 127, 255, 0.06) 80%,
+    transparent 100%
   );
-  background-size: 1100% 100%;
-  animation: gradientScroll 10s linear infinite;
+  animation: shimmerSweep 5s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .header {
@@ -108,13 +129,14 @@ a[href="#home"] {
   margin-left: auto;
   margin-right: auto;
   font-size: 1.2em;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
   width: 60%;
 }
 
-.header img {
+.header img,
+.header-top img {
   width: 150px;
   border-radius: 50%;
 }
