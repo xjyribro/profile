@@ -9,10 +9,11 @@
   --scrollbar-thumb-hover: #5670be;
   --scrollbar-scroller: #4caf50;
   --section-separator: #ff9800;
-  /* --text-blue: #4d7fff;
+  --text-blue: #4d7fff;
   --text-green: #4caf50;
-  --text-orange: #ff9800; */
+  --text-orange: #ff9800;
   --text-red: #e91e63;
+  --card-bg: #1a1a2e;
   --navbar-height: 56px;
   --text-padding: 32px;
 }
@@ -190,6 +191,27 @@ a[href="#home"] {
   margin-top: 20px;
 }
 
+/* Section headings with left accent bar */
+.section-heading {
+  text-align: left;
+  padding-left: var(--text-padding);
+  padding-right: var(--text-padding);
+  margin-bottom: 20px;
+  border-left: 4px solid var(--highlight-blue);
+  padding-left: 16px;
+  margin-left: var(--text-padding);
+}
+
+.section-heading-sm {
+  color: var(--primary-text);
+  padding-left: var(--text-padding);
+  padding-right: var(--text-padding);
+  margin-bottom: 16px;
+  border-left: 3px solid var(--highlight-blue);
+  padding-left: 12px;
+  margin-left: var(--text-padding);
+}
+
 h2 {
   text-align: center;
   padding-left: var(--text-padding);
@@ -218,6 +240,7 @@ h3 {
 
 .section {
   flex: 1;
+  margin-bottom: 8px;
 }
 
 ul {
@@ -260,6 +283,390 @@ ul {
   background-color: var(--scrollbar-thumb-hover);
 }
 
+/* ── Core Competencies ── */
+.competencies-section {
+  width: 80%;
+  margin: 24px auto 8px;
+}
+
+.competencies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.competency-card {
+  background: var(--card-bg);
+  border: 1px solid var(--highlight-blue);
+  border-radius: 10px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.competency-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(77, 127, 255, 0.2);
+}
+
+.competency-icon {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.competency-card h4 {
+  color: var(--highlight-blue);
+  margin-bottom: 6px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.competency-card p {
+  color: #aaa;
+  font-size: 0.85em;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .competencies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .competencies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Tech Stack Chips ── */
+.tech-chips-section {
+  padding: 0 var(--text-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chip-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip-label {
+  color: #888;
+  font-size: 0.78em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  min-width: 70px;
+  padding-top: 5px;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-chip {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.82em;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.chip-frontend {
+  background: rgba(77, 127, 255, 0.15);
+  border-color: rgba(77, 127, 255, 0.5);
+  color: #7fa8ff;
+}
+
+.chip-backend {
+  background: rgba(76, 175, 80, 0.15);
+  border-color: rgba(76, 175, 80, 0.5);
+  color: #81c784;
+}
+
+.chip-mobile {
+  background: rgba(255, 152, 0, 0.15);
+  border-color: rgba(255, 152, 0, 0.5);
+  color: #ffb74d;
+}
+
+.chip-cloud {
+  background: rgba(156, 39, 176, 0.15);
+  border-color: rgba(156, 39, 176, 0.5);
+  color: #ce93d8;
+}
+
+.chip-other {
+  background: rgba(233, 30, 99, 0.12);
+  border-color: rgba(233, 30, 99, 0.4);
+  color: #f48fb1;
+}
+
+/* ── Featured Projects ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 var(--text-padding);
+  margin-bottom: 32px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(77, 127, 255, 0.18);
+  border-color: var(--highlight-blue);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.project-header h4 {
+  color: var(--primary-text);
+  margin: 0;
+  font-size: 1.05em;
+}
+
+.outcome-badge {
+  font-size: 0.72em;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.badge-winner {
+  background: rgba(255, 193, 7, 0.2);
+  border: 1px solid rgba(255, 193, 7, 0.6);
+  color: #ffd54f;
+}
+
+.badge-deployed {
+  background: rgba(76, 175, 80, 0.15);
+  border: 1px solid rgba(76, 175, 80, 0.5);
+  color: #81c784;
+}
+
+.project-desc {
+  color: #aaa;
+  font-size: 0.88em;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.project-link {
+  color: var(--highlight-blue);
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Timeline (Experience) ── */
+.timeline {
+  padding: 0 var(--text-padding);
+  border-left: 3px solid var(--highlight-blue);
+  margin-left: calc(var(--text-padding) + 8px);
+  padding-left: 24px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -35px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: var(--highlight-blue);
+  border-radius: 50%;
+  border: 2px solid var(--primary-bg);
+}
+
+.timeline-content h3 {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.timeline-content ul {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.timeline-date {
+  color: var(--text-green);
+  font-size: 0.82em;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+/* ── Achievements Badges ── */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 0 var(--text-padding);
+}
+
+.achievement-badge {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border: 1px solid #2a2a4a;
+}
+
+.achievement-badge.badge-winner {
+  border-color: rgba(255, 193, 7, 0.5);
+  background: rgba(255, 193, 7, 0.05);
+}
+
+.achievement-badge.badge-finalist {
+  border-color: rgba(200, 200, 200, 0.4);
+  background: rgba(200, 200, 200, 0.04);
+}
+
+.achievement-badge.badge-cert {
+  border-color: rgba(77, 127, 255, 0.4);
+}
+
+.achievement-icon {
+  font-size: 1.8em;
+  line-height: 1;
+}
+
+.achievement-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.achievement-body strong {
+  color: var(--primary-text);
+  font-size: 0.92em;
+}
+
+.achievement-org {
+  color: var(--text-orange);
+  font-size: 0.82em;
+}
+
+.achievement-date {
+  color: var(--text-green);
+  font-size: 0.8em;
+}
+
+.achievement-link {
+  color: var(--highlight-blue);
+  font-size: 0.82em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.achievement-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── GitHub Card ── */
+.github-card {
+  display: block;
+  text-decoration: none;
+  margin: 0 var(--text-padding);
+  background: var(--card-bg);
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.github-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(77, 127, 255, 0.2);
+  border-color: var(--highlight-blue);
+  text-decoration: none;
+}
+
+.github-card-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+}
+
+.github-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.github-text {
+  flex: 1;
+}
+
+.github-text strong {
+  display: block;
+  color: var(--primary-text);
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+.github-text p {
+  color: #888;
+  font-size: 0.88em;
+  margin: 0;
+}
+
+.github-arrow {
+  color: var(--highlight-blue);
+  font-size: 1.4em;
+}
+
+/* ── Books ── */
 .books-preview {
   display: flex;
   justify-content: center;
@@ -326,7 +733,7 @@ ul {
   .books-container {
     flex-direction: column;
   }
-  
+
   .book-item {
     margin: 10px 0;
   }
@@ -338,18 +745,28 @@ ul {
     align-items: center;
     gap: 20px;
   }
-  
+
   .book-preview {
     flex: none;
   }
-  
+
   .book-cover-preview {
     width: 150px;
     height: 225px;
   }
-  
+
   .book-cover {
     width: 150px;
     height: 200px;
+  }
+
+  .competencies-section,
+  .content {
+    width: 95%;
+  }
+
+  .timeline {
+    margin-left: 16px;
+    padding-left: 16px;
   }
 }

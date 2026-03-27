@@ -32,7 +32,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#github">GitHub</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#blogs">Blogs</a>
@@ -63,8 +69,8 @@
           >Download CV</a
         >
         <p class="tagline">
-          Passionate Software Engineer crafting cross-platform experiences for
-          web and mobile.<br />
+          <strong>Full Stack Engineer</strong> building cross-platform products across
+          web (React/Next.js), mobile (Flutter), backend (Python/Node.js), and cloud (AWS).<br />
           Co-founder of
           <a href="https://bizbulk.com/" target="_blank">Bizbulk</a>. Organiser
           of
@@ -75,85 +81,189 @@
       </div>
     </div>
 
-    <div class="content">
-      <div class="section">
-        <h2 style="text-align: center">Professional Experience</h2>
-        <h3>Software Engineer at Spark Commodities (2025 - Present)</h3>
-        <ul>
-          <li>
-            <strong>Backend Python Engineer:</strong> Design, build, and maintain
-            scalable server-side infrastructure to support core product operations.
-            Responsibilities include RESTful API design and implementation, managing
-            and optimising data pipelines and workflows, and overseeing full product
-            lifecycle delivery from development through to production.
-          </li>
-        </ul>
-        <h3>Software Engineer at GAOGAO (Oct 2021 - Dec 2023)</h3>
-        <ul>
-          <li>
-            <strong>Dental service search engine:</strong> Migrated application
-            from Client-side to Server-side rendering with Next.js. Performed
-            Search engine optimisation. Created new payment gateway UI powered
-            by GMO payments. Successfully completed in Oct 2023.
-          </li>
-          <li>
-            <strong>2D Metaverse project:</strong> Built Metaverse for companies
-            to hold virtual meetings. Used React-three-fibre as a 2D engine and
-            Agora as a video hosting service. Deployed AWS Cognito, AppSync, and
-            DynamoDB to create real-time updates for users. Successfully
-            deployed MVP in Jun 2023.
-          </li>
-          <li>
-            <strong>Fintech company (loan services):</strong> Built front-end
-            user interface for applying and tracking of loans. Used React.js as
-            the web framework. Completed involvement in Dec 2022.
-          </li>
-          <li>
-            <strong>Food delivery service:</strong> Migrated a client's old
-            database to the cloud. Used AWS Elastic Beanstalk, Route 53, RDS,
-            and EC2. Completed involvement in Oct 2022.
-          </li>
-          <li>
-            <strong>Smart contracts application:</strong> Built web application
-            for users to create Decentralised Autonomous Organisations (DAO).
-            Front-end application interfaceted with smart contracts hosted on
-            the Ethereum Blockchain. Successfully completed in Jul 2022.
-          </li>
-          <li>
-            <strong>AI Transcription service:</strong> Powered by AI, the web
-            application allows users to transcribe uploaded videos and audio
-            into text for editing. Used Next.js and Tailwind CSS. Successfully
-            deployed MVP in Dec 2021.
-          </li>
-        </ul>
+    <!-- Core Competencies -->
+    <div class="competencies-section">
+      <div class="competencies-grid">
+        <div class="competency-card">
+          <span class="competency-icon">🌐</span>
+          <h4>Full Stack Web</h4>
+          <p>React · Next.js · TypeScript</p>
+        </div>
+        <div class="competency-card">
+          <span class="competency-icon">📱</span>
+          <h4>Mobile</h4>
+          <p>Flutter · Dart</p>
+        </div>
+        <div class="competency-card">
+          <span class="competency-icon">☁️</span>
+          <h4>Cloud &amp; Backend</h4>
+          <p>AWS · Python · Node.js</p>
+        </div>
+        <div class="competency-card">
+          <span class="competency-icon">🤖</span>
+          <h4>Data &amp; AI</h4>
+          <p>ML · AI APIs · AWS ML</p>
+        </div>
       </div>
+    </div>
+
+    <div class="content">
+      <!-- Featured Projects -->
+      <div class="section" id="projects">
+        <h2 class="section-heading">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h4>Bizbulk</h4>
+              <span class="outcome-badge badge-deployed">Deployed</span>
+            </div>
+            <p class="project-desc">E-commerce group buying platform — create groups, buy products at a discount.</p>
+            <div class="chip-row">
+              <span class="tech-chip chip-frontend">React</span>
+              <span class="tech-chip chip-mobile">Flutter</span>
+              <span class="tech-chip chip-cloud">AWS</span>
+              <span class="tech-chip chip-cloud">Firebase</span>
+            </div>
+            <a href="https://bizbulk.com/" target="_blank" class="project-link">View project →</a>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h4>2D Metaverse</h4>
+              <span class="outcome-badge badge-deployed">Deployed MVP</span>
+            </div>
+            <p class="project-desc">Virtual meetings platform for companies — real-time avatars and video rooms.</p>
+            <div class="chip-row">
+              <span class="tech-chip chip-frontend">React-three-fibre</span>
+              <span class="tech-chip chip-backend">Agora</span>
+              <span class="tech-chip chip-cloud">AWS Cognito</span>
+              <span class="tech-chip chip-cloud">DynamoDB</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h4>AI Transcription Service</h4>
+              <span class="outcome-badge badge-deployed">Deployed MVP</span>
+            </div>
+            <p class="project-desc">AI-powered web app to transcribe uploaded videos and audio into editable text.</p>
+            <div class="chip-row">
+              <span class="tech-chip chip-frontend">Next.js</span>
+              <span class="tech-chip chip-frontend">Tailwind CSS</span>
+              <span class="tech-chip chip-backend">AI</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h4>Flutter Hackathon Game</h4>
+              <span class="outcome-badge badge-winner">🏆 Winner</span>
+            </div>
+            <p class="project-desc">Google Global Gamers Challenge winner — a Flutter game built for a global hackathon.</p>
+            <div class="chip-row">
+              <span class="tech-chip chip-mobile">Flutter</span>
+              <span class="tech-chip chip-mobile">Dart</span>
+            </div>
+            <a href="https://xjyribro.github.io/xjyribro.gomiland.io/" target="_blank" class="project-link">Play game →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="experience">
+        <h2 class="section-heading">Professional Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Software Engineer · Spark Commodities <span class="timeline-date">2025 – Present</span></h3>
+              <ul>
+                <li>
+                  <strong>Backend Python Engineer:</strong> Design, build, and maintain
+                  scalable server-side infrastructure to support core product operations.
+                  Responsibilities include RESTful API design and implementation, managing
+                  and optimising data pipelines and workflows, and overseeing full product
+                  lifecycle delivery from development through to production.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Software Engineer · GAOGAO <span class="timeline-date">Oct 2021 – Dec 2023</span></h3>
+              <ul>
+                <li>
+                  <strong>Dental service search engine:</strong> Migrated application
+                  from Client-side to Server-side rendering with Next.js. Performed
+                  Search engine optimisation. Created new payment gateway UI powered
+                  by GMO payments. Successfully completed in Oct 2023.
+                </li>
+                <li>
+                  <strong>2D Metaverse project:</strong> Built Metaverse for companies
+                  to hold virtual meetings. Used React-three-fibre as a 2D engine and
+                  Agora as a video hosting service. Deployed AWS Cognito, AppSync, and
+                  DynamoDB to create real-time updates for users. Successfully
+                  deployed MVP in Jun 2023.
+                </li>
+                <li>
+                  <strong>Fintech company (loan services):</strong> Built front-end
+                  user interface for applying and tracking of loans. Used React.js as
+                  the web framework. Completed involvement in Dec 2022.
+                </li>
+                <li>
+                  <strong>Food delivery service:</strong> Migrated a client's old
+                  database to the cloud. Used AWS Elastic Beanstalk, Route 53, RDS,
+                  and EC2. Completed involvement in Oct 2022.
+                </li>
+                <li>
+                  <strong>Smart contracts application:</strong> Built web application
+                  for users to create Decentralised Autonomous Organisations (DAO).
+                  Front-end application interfaced with smart contracts hosted on
+                  the Ethereum Blockchain. Successfully completed in Jul 2022.
+                </li>
+                <li>
+                  <strong>AI Transcription service:</strong> Powered by AI, the web
+                  application allows users to transcribe uploaded videos and audio
+                  into text for editing. Used Next.js and Tailwind CSS. Successfully
+                  deployed MVP in Dec 2021.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Co-founder &amp; Lead Engineer · Bizbulk <span class="timeline-date">Apr 2022 – Present</span></h3>
+              <ul>
+                <li>
+                  <strong>E-commerce platform:</strong> Architected and built the
+                  cross-platform application. Set up cloud backend to power user
+                  authentication, database and payments. This platform allows users to
+                  create groups and buy products at a discount. Successfully launched
+                  in May 2022. Visit Bizbulk's
+                  <a href="https://bizbulk.com/" target="_blank">webpage</a>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="image-container">
         <img src="public/gaogao_team.jpg" alt="GAOGAO team" class="image" />
-      </div>
-      <div class="section">
-        <h3>Co-foundner & Lead Engineer of Bizbulk (Apr 2022 - Present)</h3>
-        <ul>
-          <li>
-            <strong>E-commerce platform:</strong> Architected and built the
-            cross-platform application. Set up cloud backend to power user
-            authentication, database and payments. This platform allows users to
-            create groups and buy products at a discount. Successfully launched
-            in May 2022. Visit Bizbulk's
-            <a href="https://bizbulk.com/" target="_blank">webpage</a>.
-          </li>
-        </ul>
       </div>
       <div class="image-container">
         <img src="public/bizbulk_logo.png" alt="Bizbulk" class="image" />
       </div>
+
       <div class="section">
-        <h3>Significant contributions</h3>
+        <h3 class="section-heading-sm">Significant Contributions</h3>
         <ul>
           <li>
             <strong>Flutter Singapore Organiser:</strong> Lead organiser for the
             Flutter Singapore meetup chapter. Hosts meetups every quarter where
             engineers present best practices and updates. Meetups also include a
-            neetworking segment. Visit Flutter Singapore's
+            networking segment. Visit Flutter Singapore's
             <a href="https://www.meetup.com/flutter-singapore/" target="_blank"
               >meetup page</a
             >.
@@ -166,32 +276,67 @@
 
       <div class="container">
         <div class="section">
-          <hr
-            style="border: 1px solid var(--section-separator); margin: 40px 0"
-          />
-          <h2>Technical Skills</h2>
+          <hr style="border: 1px solid var(--section-separator); margin: 40px 0" />
+          <h2 class="section-heading">Tech Stack</h2>
 
-          <ul style="text-align: center">
-            <li style="color: var(--text-green)">
-              Javascript/Typescript (React, Node.js, Next.js)
-            </li>
-            <li style="color: var(--text-orange)">
-              Databases (Firestore, SQLite, DynamoDB)
-            </li>
-            <li style="color: var(--text-blue)">
-              Python (Machine Learning and AI)
-            </li>
-            <li style="color: var(--text-orange)">Dart (Flutter)</li>
-            <li style="color: var(--text-green)">C# (Game Development)</li>
-            <li style="color: var(--text-orange)">Solidity (Blockchain)</li>
-          </ul>
+          <div class="tech-chips-section">
+            <div class="chip-group">
+              <span class="chip-label">Frontend</span>
+              <div class="chip-row">
+                <span class="tech-chip chip-frontend">React</span>
+                <span class="tech-chip chip-frontend">Next.js</span>
+                <span class="tech-chip chip-frontend">TypeScript</span>
+                <span class="tech-chip chip-frontend">Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="chip-group">
+              <span class="chip-label">Backend</span>
+              <div class="chip-row">
+                <span class="tech-chip chip-backend">Python</span>
+                <span class="tech-chip chip-backend">Node.js</span>
+                <span class="tech-chip chip-backend">REST APIs</span>
+              </div>
+            </div>
+            <div class="chip-group">
+              <span class="chip-label">Mobile</span>
+              <div class="chip-row">
+                <span class="tech-chip chip-mobile">Flutter</span>
+                <span class="tech-chip chip-mobile">Dart</span>
+              </div>
+            </div>
+            <div class="chip-group">
+              <span class="chip-label">Cloud</span>
+              <div class="chip-row">
+                <span class="tech-chip chip-cloud">AWS EC2</span>
+                <span class="tech-chip chip-cloud">AWS RDS</span>
+                <span class="tech-chip chip-cloud">DynamoDB</span>
+                <span class="tech-chip chip-cloud">Cognito</span>
+                <span class="tech-chip chip-cloud">AppSync</span>
+                <span class="tech-chip chip-cloud">Firebase</span>
+              </div>
+            </div>
+            <div class="chip-group">
+              <span class="chip-label">Databases</span>
+              <div class="chip-row">
+                <span class="tech-chip chip-backend">PostgreSQL</span>
+                <span class="tech-chip chip-backend">SQLite</span>
+                <span class="tech-chip chip-backend">Firestore</span>
+              </div>
+            </div>
+            <div class="chip-group">
+              <span class="chip-label">Other</span>
+              <div class="chip-row">
+                <span class="tech-chip chip-other">Solidity/Ethereum</span>
+                <span class="tech-chip chip-other">C# (Unity)</span>
+                <span class="tech-chip chip-other">Machine Learning</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="section">
-          <hr
-            style="border: 1px solid var(--section-separator); margin: 40px 0"
-          />
-          <h2>Languages:</h2>
+          <hr style="border: 1px solid var(--section-separator); margin: 40px 0" />
+          <h2 class="section-heading">Languages</h2>
           <ul style="text-align: center">
             <li style="color: var(--text-green)">English (Native)</li>
             <li style="color: var(--text-orange)">Chinese (Advanced)</li>
@@ -203,81 +348,87 @@
 
       <div class="container" id="achievements">
         <div class="section">
-          <hr
-            style="border: 1px solid var(--section-separator); margin: 40px 0"
-          />
-          <h2>Academic Background</h2>
+          <hr style="border: 1px solid var(--section-separator); margin: 40px 0" />
+          <h2 class="section-heading">Academic Background</h2>
           <ul>
             <li>
               <strong>Master of Computing (General track)</strong>
               , National University of Singapore
-              <span style="color: var(--text-green)"
-                >2024 - 2025 (Expected)</span
-              >
+              <span style="color: var(--text-green)">2024 – 2025 (Expected)</span>
             </li>
             <li>
               <strong>Bachelor of Arts (Honours in Political Science)</strong>
               , University of Warwick (UK)
-              <span style="color: var(--text-green)">2010 - 2013</span>
+              <span style="color: var(--text-green)">2010 – 2013</span>
             </li>
           </ul>
         </div>
 
         <div class="section">
-          <hr
-            style="border: 1px solid var(--section-separator); margin: 40px 0"
-          />
-          <h2 style="text-align: center; color: var(--text-orange)">
-            Achievements
-          </h2>
-          <ul class="achievements-list">
-            <li>
-              <strong>“Foundations in Artificial Intelligence”</strong>
-              Awarded by
-              <span style="color: var(--text-orange)">AI Singapore</span>,
-              <span style="color: var(--text-green)">Jul 2020</span>
-            </li>
-            <li>
-              <strong
-                >“AWS Certified Machine Learning - Specialty
-                Certification”</strong
-              >
-              Awarded by
-              <span style="color: var(--text-orange)">Amazon Web Services</span
-              >,
-              <span style="color: var(--text-green)">Aug 2022</span>
-            </li>
-            <li>
-              <strong>Winner</strong>
-              Flutter Global Gamers Challenge, a global hackathon by
-              <span style="color: var(--text-orange)">Google</span>,
-              <span style="color: var(--text-green)">Jan 2024</span>
-              View the Flutter game
-              <a
-                href="https://xjyribro.github.io/xjyribro.gomiland.io/"
-                target="_blank"
-                style="color: var(--highlight-blue); font-weight: bold"
-              >
-                here </a
-              >!
-            </li>
-            <li>
-              <strong>Top 5 Finalist</strong>
-              GovTech x OpenAI Hackathon (First OpenAI Hackathon in Asia),
-              <span style="color: var(--text-green)">Nov 2024</span>
-            </li>
-          </ul>
+          <hr style="border: 1px solid var(--section-separator); margin: 40px 0" />
+          <h2 class="section-heading" style="color: var(--text-orange)">Achievements</h2>
+          <div class="achievements-grid">
+            <div class="achievement-badge badge-cert">
+              <div class="achievement-icon">🏅</div>
+              <div class="achievement-body">
+                <strong>"Foundations in Artificial Intelligence"</strong>
+                <span class="achievement-org">AI Singapore</span>
+                <span class="achievement-date">Jul 2020</span>
+              </div>
+            </div>
+            <div class="achievement-badge badge-cert">
+              <div class="achievement-icon">☁️</div>
+              <div class="achievement-body">
+                <strong>"AWS Certified Machine Learning – Specialty"</strong>
+                <span class="achievement-org">Amazon Web Services</span>
+                <span class="achievement-date">Aug 2022</span>
+              </div>
+            </div>
+            <div class="achievement-badge badge-winner">
+              <div class="achievement-icon">🏆</div>
+              <div class="achievement-body">
+                <strong>Winner — Flutter Global Gamers Challenge</strong>
+                <span class="achievement-org">Google</span>
+                <span class="achievement-date">Jan 2024</span>
+                <a
+                  href="https://xjyribro.github.io/xjyribro.gomiland.io/"
+                  target="_blank"
+                  class="achievement-link"
+                >Play the game →</a>
+              </div>
+            </div>
+            <div class="achievement-badge badge-finalist">
+              <div class="achievement-icon">🥈</div>
+              <div class="achievement-body">
+                <strong>Top 5 Finalist — GovTech × OpenAI Hackathon</strong>
+                <span class="achievement-org">First OpenAI Hackathon in Asia</span>
+                <span class="achievement-date">Nov 2024</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- GitHub Section -->
+      <div class="section" id="github">
+        <hr style="border: 1px solid var(--section-separator); margin: 40px 0" />
+        <h2 class="section-heading">Open Source</h2>
+        <a href="https://github.com/xjyribro" target="_blank" class="github-card">
+          <div class="github-card-inner">
+            <img src="public/github.png" alt="GitHub" class="github-logo" />
+            <div class="github-text">
+              <strong>github.com/xjyribro</strong>
+              <p>Check out my open source work and personal projects</p>
+            </div>
+            <span class="github-arrow">→</span>
+          </div>
+        </a>
       </div>
 
       <div class="container" id="blogs">
         <div class="section">
-          <hr
-            style="border: 1px solid var(--section-separator); margin: 40px 0"
-          />
-          <h2 style="text-align: center; color: var(--text-green)">
-            Technical Blog
-          </h2>
+          <hr style="border: 1px solid var(--section-separator); margin: 40px 0" />
+          <h2 class="section-heading" style="color: var(--text-green)">Technical Blog</h2>
           <p style="text-align: center">
             Check out my technical sharing and articles on Medium: <br />
             <a
@@ -290,12 +441,8 @@
           </p>
         </div>
         <div class="section" id="travel-blog">
-          <hr
-            style="border: 1px solid var(--section-separator); margin: 40px 0"
-          />
-          <h2 style="text-align: center; color: var(--text-orange)">
-            Travel Blog
-          </h2>
+          <hr style="border: 1px solid var(--section-separator); margin: 40px 0" />
+          <h2 class="section-heading" style="color: var(--text-orange)">Travel Blog</h2>
           <p style="text-align: center">
             I lived in various parts of the world and I love travelling! I share
             my stories, photos, and travel tips on my blog: <br />
@@ -312,12 +459,8 @@
 
       <div class="container" id="fiction">
         <div class="section">
-          <hr
-            style="border: 1px solid var(--section-separator); margin: 40px 0"
-          />
-          <h2 style="text-align: center; color: var(--text-green)">
-            Fiction Writing
-          </h2>
+          <hr style="border: 1px solid var(--section-separator); margin: 40px 0" />
+          <h2 class="section-heading" style="color: var(--text-green)">Fiction Writing</h2>
           <div class="books-preview">
             <div class="book-preview">
               <img src="public/caravel_cover.png" alt="Caravel Book Cover" class="book-cover-preview" />
@@ -378,34 +521,29 @@
     </script>
     <script>
       function updateGreenBarPosition() {
-        const navbar = document.querySelector(".navbar") // Select the navbar
-        const textGreen = document.getElementById("custom-scroller") // Select the green bar
+        const navbar = document.querySelector(".navbar")
+        const textGreen = document.getElementById("custom-scroller")
 
         if (navbar && textGreen) {
-          const navbarHeight = navbar.offsetHeight // Get the navbar height
-          textGreen.style.top = `${navbarHeight}px` // Adjust the green bar position
+          const navbarHeight = navbar.offsetHeight
+          textGreen.style.top = `${navbarHeight}px`
         }
       }
 
-      // Set up the ResizeObserver
       const navbar = document.querySelector(".navbar")
       if (navbar) {
         const resizeObserver = new ResizeObserver(() => {
-          updateGreenBarPosition() // Callback when the navbar height changes
+          updateGreenBarPosition()
         })
-
-        resizeObserver.observe(navbar) // Start observing the navbar element
+        resizeObserver.observe(navbar)
       }
 
-      // Run the function when the page loads
       window.addEventListener("DOMContentLoaded", updateGreenBarPosition)
 
-      // Listen for the click event on the navbar toggler button
       const navbarToggler = document.querySelector(".navbar-toggler")
       if (navbarToggler) {
         navbarToggler.addEventListener("click", () => {
-          // Force a reflow to ensure ResizeObserver gets triggered
-          navbar.offsetHeight // Accessing this property forces the browser to recalculate layout
+          navbar.offsetHeight
         })
       }
     </script>
@@ -418,11 +556,11 @@
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 entry.target.classList.add("visible")
-                observer.unobserve(entry.target) // Stop observing after it's visible
+                observer.unobserve(entry.target)
               }
             })
           },
-          { threshold: 0.1 } // Trigger when 10% of the image is visible
+          { threshold: 0.1 }
         )
 
         images.forEach((image) => {
